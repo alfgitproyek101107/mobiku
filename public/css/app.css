@@ -1,0 +1,33 @@
+/* public/css/app.css - Custom styles that can be added to Tailwind */
+@layer utilities {
+    .card-hover {
+        transition: all 0.3s ease;
+    }
+    
+    .card-hover:hover {
+        transform: translateY(-5px);
+    }
+    
+    .btn-hover {
+        transition: all 0.3s ease;
+    }
+    
+    .btn-hover:hover {
+        transform: translateY(-2px);
+    }
+    
+    .hero-bg {
+        background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    }
+    
+    .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    
+    .animate-on-scroll.opacity-100 {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
